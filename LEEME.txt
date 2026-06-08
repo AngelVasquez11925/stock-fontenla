@@ -1,0 +1,41 @@
+==================================================================
+  STOCK FONTENLA · APP CON STOCK EN VIVO — Grupo Mundo
+==================================================================
+
+CÓMO FUNCIONA AHORA (automático y gratis)
+-----------------------------------------
+1. Vos actualizás el stock SOLO en tu Excel de OneDrive:
+   "Stock y proyectados.xlsx"  (hoja Stocks-Sucursal, sucursal ESCALADA).
+2. Una tarea programada en tu PC lee ese Excel cada X minutos y publica
+   un archivito "stock.csv" en GitHub (gratis).
+3. La app del cliente (web, Android, iOS) lee ese stock.csv al abrirse y
+   muestra SIEMPRE el stock más reciente. Vos no tocás la app nunca más.
+
+ARCHIVOS DE ESTA CARPETA (esto se sube a GitHub una sola vez)
+-------------------------------------------------------------
+  index.html        -> la app del CELULAR (la que se instala)
+  escritorio.html   -> la app para PC (se elige sola según el dispositivo)
+  stock.csv         -> stock actual (lo regenera la tarea automática)
+  manifest.json     -> datos de la app (nombre, ícono)
+  sw.js             -> hace que abra rápido y funcione sin señal
+  icon-192/512/180  -> íconos de la app
+  _headers          -> (se ignora en GitHub; era de Netlify)
+
+La parte que lee el Excel y publica está en la carpeta "Fontenla_Sync"
+(NO se sube a GitHub, queda privada en tu PC). Ver GUIA-GITHUB.txt ahí.
+
+INSTALAR EN EL CELULAR (Android e iOS)
+--------------------------------------
+ANDROID (Chrome):  abrir la dirección -> menú (⋮) -> "Instalar aplicación".
+iPHONE (Safari):   abrir la dirección -> Compartir -> "Agregar a inicio".
+
+IMPORTANTE: si tenías la app vieja instalada, BORRALA y reinstalá desde
+la dirección nueva de GitHub. La vieja tenía el stock del 22-05 adentro.
+
+Truco: tocando la fecha/título de arriba, fuerza la actualización al toque.
+
+SI ALGÚN DÍA CAMBIÁS EL CATÁLOGO O LAS FOTOS
+--------------------------------------------
+En sw.js cambiá 'fontenla-v1' por 'fontenla-v2' y volvé a subir los HTML.
+(Para el stock NO hace falta: el stock se baja fresco siempre.)
+==================================================================
