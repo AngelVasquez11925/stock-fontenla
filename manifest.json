@@ -1,7 +1,7 @@
 {
-  "name": "Stock Fontenla · Grupo Mundo",
-  "short_name": "Stock Fontenla",
-  "description": "Catálogo digital y stock en vivo de Fontenla",
+  "name": "Catálogo GM · Grupo Mundo",
+  "short_name": "Catálogo GM",
+  "description": "Catálogo digital y stock en vivo · Grupo Mundo",
   "lang": "es-AR",
   "start_url": "./index.html",
   "scope": "./",
